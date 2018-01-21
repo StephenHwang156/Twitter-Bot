@@ -1,5 +1,6 @@
 # Twitter-Bot
 Automated bot for Twitter
 
-End-Goal:
-Pull pictures from subreddit and post them automatically on twitter
+Scrapes image macros from ifunny.co and posts them onto twitter, see @not_funny_bot
+
+Run wrapper.py to initialize 
