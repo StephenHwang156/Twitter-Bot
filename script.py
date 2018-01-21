@@ -1,5 +1,5 @@
 import config
-import tweepy, time, sys
+import tweepy, time, os
 
 
 auth = tweepy.OAuthHandler(config.CONSUMER_KEY, config.CONSUMER_SECRET)
@@ -9,4 +9,4 @@ api = tweepy.API(auth)
 os.chdir('target_folder')
 for image in os.listdir('.'):
     api.update_with_media(image)
-    time.sleep(5)
+    time.sleep(5) # posts every time.sleep(x), x seconds
